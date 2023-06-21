@@ -11,16 +11,9 @@ export default function Home() {
     console.log('Calling api');
     axios.get('/api/posts').then((response) => {
       const { data } = response;
-      console.log(data);
       setPosts(data);
     });
   }, []);
-
-  useEffect(() => {
-    posts.forEach((post) => {
-      console.log(post.content);
-    });
-  }, [posts]);
 
   return (
     <main className="min-h-screen w-1/3 mt-5">
