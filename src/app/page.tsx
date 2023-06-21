@@ -33,7 +33,7 @@ export default function Home() {
   }, [entry, fetchNextPage]);
 
   return (
-    <main className="min-h-screen w-1/3 mt-5">
+    <main className="min-h-screen md:w-1/3 mt-5 w-11/12">
       <h1 className="text-3xl font-bold tracking-tigh mb-5">Infinite Scrolling App</h1>
       <ul className="flex flex-col gap-3">
         {posts?.map((post, index) => {
